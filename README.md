@@ -1,6 +1,6 @@
 ---
 title: Automatic speech recognition
-sdk: docker
+sdk: gradio
 app_file: src/app.py
 python_version: 3.9
 sdk_version: 3.36.1
