@@ -45,7 +45,7 @@ def inference(input, lan, trans):
     tr = transcriber(input, lan, translate=trans)
     return {textbox: gr.update(value= tr["text"])}
 
-with gr.Blocks(title="Automatic speech recognition") as interface:
+with gr.Blocks(title="Automatic speech recognition") as demo:
     with gr.Row():
         gr.Markdown(
             """
@@ -81,5 +81,5 @@ with gr.Blocks(title="Automatic speech recognition") as interface:
 
     transcribe_event = upl_btn.click(fn =inference, inputs=[upl_input, upl_language, upl_translate], outputs=[textbox])
 
-interface.queue(concurrency_count=1)
-interface.launch(server_name="127.0.0.1", server_port=7860)
+demo.queue(concurrency_count=1)
+demo.launch()
