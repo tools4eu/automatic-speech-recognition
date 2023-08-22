@@ -5,7 +5,7 @@ app_file: src/app.py
 python_version: 3.9
 sdk_version: 3.36.1
 app_port: 7860
-tags: asr
+tags: [asr, stt, speech-to-text]
 pinned: true
 emoji: ✍️
 ---
