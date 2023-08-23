@@ -125,7 +125,7 @@ def transcriber(input: str, language: str, translate: bool) -> dict:
     Returns: transcription and segment-timestamps.
     """
 
-    model = WhisperModel(model_size, device=device, compute_type="float16")
+    model = WhisperModel(model_size, device=device)
 
     
 
