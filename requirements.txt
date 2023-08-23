@@ -9,10 +9,6 @@ python-docx==0.8.11
 faster-whisper==0.6.0
 
 --extra-index-url https://download.pytorch.org/whl/cu117; sys_platform == "linux"
-torch==1.13.1+cu117; sys_platform == "linux"
-torchvision==0.14.1+cu117; sys_platform == "linux"
-torchaudio==0.13.1; sys_platform == "linux"
-
-torch==1.13.1; sys_platform == "darwin"
-torchvision==0.14.1; sys_platform == "darwin"
-torchaudio==0.13.1; sys_platform == "darwin"
+torch==1.13.1
+torchvision==0.14.1
+torchaudio==0.13.1
